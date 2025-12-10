@@ -6,7 +6,6 @@ This repository implements a multi‑class Softmax Regression model from scratch
 ```
 softmax-regression-20newsgroups/
 │   README.md
-│   requirements.txt
 │
 ├── data/                # (dataset is loaded on‑the‑fly, no files stored)
 ├── src/
