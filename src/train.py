@@ -14,7 +14,7 @@ def main():
     test_texts, test_labels = load_data(subset='test')
 
     # Vectorize texts
-    X_train, X_test, vectorizer = vectorize(train_texts, test_texts, max_features=20000)
+    X_train, X_test, _ = vectorize(train_texts, test_texts, max_features=20000)
     n_features = X_train.shape[1]
     n_classes = np.max(train_labels) + 1
 

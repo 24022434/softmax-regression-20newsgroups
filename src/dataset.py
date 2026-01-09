@@ -1,8 +1,13 @@
+import os
+import sys
+# Add project root to sys.path to allow importing from src
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import numpy as np
 from src.utils import load_data, vectorize
 from sklearn.model_selection import train_test_split
 
-def get_dataset(max_features=20000, val_ratio=0.1, random_state=42):
+def get_dataset(max_features=20000, val_ratio=0.1, random_state=36):
     """Load 20 Newsgroups data, vectorize with TF‑IDF, and split into train/val/test.
 
     Returns:
